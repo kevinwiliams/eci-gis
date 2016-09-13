@@ -14,11 +14,14 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="gis-view">
 
+
     <h1><?= Html::encode($model->eccid) ?></h1>
+
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->gis_id], ['class' => 'btn btn-primary']) ?> 
         <?php 
+
             //echo $region;
            // echo $session->get('region');
         //= Html::a('Delete', ['delete', 'id' => $model->gis_id], [

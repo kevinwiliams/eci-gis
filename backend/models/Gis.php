@@ -27,7 +27,7 @@ use Yii;
  */
 class Gis extends \yii\db\ActiveRecord
 {
-    
+
 
     /**
      * @inheritdoc

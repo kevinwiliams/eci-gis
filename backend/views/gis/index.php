@@ -18,7 +18,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?php //= Html::a('Create Gis', ['create'], ['class' => 'btn btn-success']) ?>
+
         <a href="http://maps.google.com" target="_blank" class="btn btn-info" role="button">Open Google Maps</a>
+
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

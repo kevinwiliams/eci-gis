@@ -17,7 +17,6 @@ class GisController extends Controller
 {
     public $region;
 
-    //pu
     /**
      * @inheritdoc
      */
@@ -39,7 +38,7 @@ class GisController extends Controller
      */
     public function actionIndex()
     {
-        
+
         $searchModel = new GisSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -164,7 +163,7 @@ class GisController extends Controller
      */
     public function actionUpdate($id)
     {
-        //$region = $_SESSION['session'];
+
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -173,6 +172,7 @@ class GisController extends Controller
             return $this->render('update', [
                 'model' => $model,
                // 'region'=>$region,
+             
             ]);
         }
     }
