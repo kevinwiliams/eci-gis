@@ -50,7 +50,7 @@ class GisController extends Controller
 
     public function actionRegion1()
     {
-        $region = 1;
+        $_SESSION['region'] = $region = 1;
         $searchModel = new GisSearch();
         $query = (new Query())->from('ecc_gis_data')->where(['region' => 1, 'latlng'=>NULL]); 
             
@@ -65,7 +65,7 @@ class GisController extends Controller
 
     public function actionRegion2()
     {
-        $region = 2; 
+        $_SESSION['region'] = $region = 2; 
         $searchModel = new GisSearch();            
         $dataProvider = $searchModel->searchregion(Yii::$app->request->queryParams, $region);
 
@@ -77,7 +77,7 @@ class GisController extends Controller
     }
     public function actionRegion3()
     {
-        $region = 3; 
+        $_SESSION['region'] = $region = 3; 
         $searchModel = new GisSearch();            
         $dataProvider = $searchModel->searchregion(Yii::$app->request->queryParams, $region);
 
@@ -89,7 +89,7 @@ class GisController extends Controller
     }
     public function actionRegion4()
     {
-        $region = 4; 
+        $_SESSION['region'] = $region = 4; 
         $searchModel = new GisSearch();            
         $dataProvider = $searchModel->searchregion(Yii::$app->request->queryParams, $region);
 
@@ -101,7 +101,7 @@ class GisController extends Controller
     }
     public function actionRegion5()
     {
-        $region = 5; 
+        $_SESSION['region'] = $region = 5; 
         $searchModel = new GisSearch();            
         $dataProvider = $searchModel->searchregion(Yii::$app->request->queryParams,$region);
 
@@ -113,7 +113,7 @@ class GisController extends Controller
     }
     public function actionRegion6()
     {
-        $region = 6; 
+        $_SESSION['region'] = $region = 6; 
         $searchModel = new GisSearch();            
         $dataProvider = $searchModel->searchregion(Yii::$app->request->queryParams, $region);
 

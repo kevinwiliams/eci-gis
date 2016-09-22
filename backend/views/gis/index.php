@@ -8,8 +8,18 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\GisSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+$session = Yii::$app->session;
+if (!$session->isActive) {
+       $session->open();
+    }
+if(isset($region))
+    $session->set('region', $region);
+else
+    $region = $_SESSION['region'];
+
 $this->title = (isset($region)) ? 'GIS Data Region '. $region : 'GIS Data All Regions';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="gis-index">
 

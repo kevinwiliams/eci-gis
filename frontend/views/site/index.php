@@ -14,7 +14,7 @@ $this->title = 'ECC - Age 4 Assessment Papers';
 
         <p><a class="btn btn-lg btn-success" href="?r=site/signup">Sign Up!</a></p>
         <?php } else {?>
-                    <p><a class="btn btn-lg btn-success" href="http://it-professional:8080/assess/backend/web/">Get started!</a></p>
+                    <p><a class="btn btn-lg btn-success" href="http://localhost:8080/eci-gis/backend/web/">Get started!</a></p>
          <?php } ?>
     </div>
 <!--

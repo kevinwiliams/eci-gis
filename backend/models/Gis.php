@@ -63,8 +63,8 @@ class Gis extends \yii\db\ActiveRecord
             'eci_parish_id' => 'Parish',
             'eci_community_id' => 'Community',
             'eci_con_id' => 'Constituency',
-            'eccid' => 'Eccid',
-            'eci_name' => 'Eci Name',
+            'eccid' => 'ECC ID',
+            'eci_name' => 'ECI Name',
             'address' => 'Address',
             'telephone' => 'Telephone',
             'community' => 'Community',
@@ -75,7 +75,7 @@ class Gis extends \yii\db\ActiveRecord
             'email' => 'Email',
             'latitude' => 'Latitude',
             'longitude' => 'Longitude',
-            'latlng' => 'Latlng',
+            'latlng' => 'Coordinates',
         ];
     }
 
